@@ -10,8 +10,7 @@ def get_db_connection():
 
 @app.route('/')
 def index():
-    tasks_html = <h1>Witaj! Aplikacja wdrożona przez GitHub Actions!</h1>
-    tasks_html += "<h2>Lista zadan z bazy danych:</h2><ul>"
+    tasks_html = "<h2>itaj! Aplikacja wdrożona przez GitHub Actions!:</h2><ul>"
     try:
         conn_str, conn = get_db_connection()
         cursor = conn.cursor()
